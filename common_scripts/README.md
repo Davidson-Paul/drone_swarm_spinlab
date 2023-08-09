@@ -9,5 +9,5 @@ Find scripts for
 - publishing custom rostopics
 
 ## Instruction for Custom Rostopic
-- keep the .msg files in msg folder of the package
+- keep the .msg files in msg folder of the iq_gnc package
 - make changes in CMakeLists and package.xml files by referring to https://wiki.ros.org/ROS/Tutorials/CreatingMsgAndSrv 
