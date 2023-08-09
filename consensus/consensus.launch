@@ -34,35 +34,35 @@
 	</group> -->
 
 	<group>
-		<node pkg="iq_gnc" type="di_ct_local.py" name="di_ct_local" output="screen" ns="/fury_1">
+		<node pkg="iq_gnc" type="vc_track.py" name="vc_track" output="screen" ns="/fury_1">
 			<param name="id" value="1"/>
 			<param name="use_sim_time"  value="true" />
 		</node>
 	</group>
 
 	<group>
-		<node pkg="iq_gnc" type="di_ct_local.py" name="di_ct_local" output="screen" ns="/fury_2">
+		<node pkg="iq_gnc" type="vc_track.py" name="vc_track" output="screen" ns="/fury_2">
 			<param name="id" value="2"/>
 			<param name="use_sim_time"  value="true" />
 		</node>
 	</group>
 	
 	<group>	
-		<node pkg="iq_gnc" type="di_ct_local.py" name="di_ct_local" output="screen" ns="/fury_3">
+		<node pkg="iq_gnc" type="vc_track.py" name="vc_track" output="screen" ns="/fury_3">
 			<param name="id" value="3"/>
 			<param name="use_sim_time"  value="true" />
 		</node>
 	</group>
 	
     <group>	
-		<node pkg="iq_gnc" type="di_ct_local.py" name="di_ct_local" output="screen" ns="/fury_4">
+		<node pkg="iq_gnc" type="vc_track.py" name="vc_track" output="screen" ns="/fury_4">
 			<param name="id" value="4"/>
 			<param name="use_sim_time"  value="true" />
 		</node>
 	</group>
 	
     <group>	
-		<node pkg="iq_gnc" type="di_ct_local.py" name="di_ct_local" output="screen" ns="/fury_5">
+		<node pkg="iq_gnc" type="vc_track.py" name="vc_track" output="screen" ns="/fury_5">
 			<param name="id" value="5"/>
 			<param name="use_sim_time"  value="true" />
 		</node>
