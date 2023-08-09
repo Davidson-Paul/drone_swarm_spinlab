@@ -1,0 +1,31 @@
+<!--
+	Launch file for publishing DroneStates message from all drones
+-->
+
+<launch>
+	<group>
+		<node pkg="iq_gnc" type="drone_states_glob_pub.py" name="f1_drone_states" output="screen" ns="/ditto_1">
+			<param name="use_sim_time"  value="true" />
+		</node>
+	</group>
+    <group>
+		<node pkg="iq_gnc" type="drone_states_glob_pub.py" name="f2_drone_states" output="screen" ns="/ditto_2">
+			<param name="use_sim_time"  value="true" />
+		</node>
+	</group>
+    <group>
+		<node pkg="iq_gnc" type="drone_states_glob_pub.py" name="f3_drone_states" output="screen" ns="/ditto_3">
+			<param name="use_sim_time"  value="true" />
+		</node>
+	</group>
+    <group>
+		<node pkg="iq_gnc" type="drone_states_glob_pub.py" name="f4_drone_states" output="screen" ns="/ditto_4">
+			<param name="use_sim_time"  value="true" />
+		</node>
+	</group>
+    <group>
+		<node pkg="iq_gnc" type="drone_states_glob_pub.py" name="f5_drone_states" output="screen" ns="/ditto_5">
+			<param name="use_sim_time"  value="true" />
+		</node>
+	</group>
+</launch>

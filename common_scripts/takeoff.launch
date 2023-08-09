@@ -1,0 +1,37 @@
+<launch>
+  <group>
+    <node pkg="iq_gnc" type="takeoff.py" name="takeoff1" output="screen" ns="/fury_1">
+      <param name="namespace" value="/fury_1"/>
+      <param name="use_sim_time" value="true"/>
+    </node>
+  </group>
+
+  <group>
+    <node pkg="iq_gnc" type="takeoff.py" name="takeoff2" output="screen" ns="/fury_2">
+      <param name="namespace" value="/fury_2"/>
+      <param name="use_sim_time" value="true"/>
+    </node>
+  </group>
+
+  <group>
+    <node pkg="iq_gnc" type="takeoff.py" name="takeoff3" output="screen" ns="/fury_3">
+      <param name="namespace" value="/fury_3"/>
+      <param name="use_sim_time" value="true"/>
+    </node>
+  </group>
+
+  <group>
+    <node pkg="iq_gnc" type="takeoff.py" name="takeoff4" output="screen" ns="/fury_4">
+      <param name="namespace" value="/fury_4"/>
+      <param name="use_sim_time" value="true"/>
+    </node>
+  </group>
+
+  <group>
+    <node pkg="iq_gnc" type="takeoff.py" name="takeoff5" output="screen" ns="/fury_5">
+      <param name="namespace" value="/fury_5"/>
+      <param name="use_sim_time" value="true"/>
+    </node>
+  </group>
+</launch>
+

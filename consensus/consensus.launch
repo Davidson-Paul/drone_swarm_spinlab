@@ -1,0 +1,71 @@
+<!-- 
+	Launch file for running consensus scripts simultaneously
+-->
+
+<launch>
+	<group>
+		<node pkg="iq_gnc" type="VL_pub.py" name="VL_states_pub" output="screen">
+			<param name="use_sim_time"  value="true" />
+		</node>
+	</group>
+
+	<group>
+		<node pkg="iq_gnc" type="error_rel_glob.py" name="error_rel" output="screen">
+			<param name="use_sim_time"  value="true" />
+		</node>
+	</group>
+
+	<group>
+		<node pkg="iq_gnc" type="vc_error_rel.py" name="vc_error" output="screen">
+			<param name="use_sim_time"  value="true" />
+		</node>
+	</group>
+
+	<group>
+		<node pkg="iq_gnc" type="livepose_vl_vc.py" name="livepose" output="screen">
+			<param name="use_sim_time"  value="true" />
+		</node>
+	</group>
+
+	<!-- <group>
+		<node pkg="iq_gnc" type="adjacency_matrix.py" name="A_matrix" output="screen">
+			<param name="use_sim_time"  value="true" />
+		</node>
+	</group> -->
+
+	<group>
+		<node pkg="iq_gnc" type="di_ct_local.py" name="di_ct_local" output="screen" ns="/fury_1">
+			<param name="id" value="1"/>
+			<param name="use_sim_time"  value="true" />
+		</node>
+	</group>
+
+	<group>
+		<node pkg="iq_gnc" type="di_ct_local.py" name="di_ct_local" output="screen" ns="/fury_2">
+			<param name="id" value="2"/>
+			<param name="use_sim_time"  value="true" />
+		</node>
+	</group>
+	
+	<group>	
+		<node pkg="iq_gnc" type="di_ct_local.py" name="di_ct_local" output="screen" ns="/fury_3">
+			<param name="id" value="3"/>
+			<param name="use_sim_time"  value="true" />
+		</node>
+	</group>
+	
+    <group>	
+		<node pkg="iq_gnc" type="di_ct_local.py" name="di_ct_local" output="screen" ns="/fury_4">
+			<param name="id" value="4"/>
+			<param name="use_sim_time"  value="true" />
+		</node>
+	</group>
+	
+    <group>	
+		<node pkg="iq_gnc" type="di_ct_local.py" name="di_ct_local" output="screen" ns="/fury_5">
+			<param name="id" value="5"/>
+			<param name="use_sim_time"  value="true" />
+		</node>
+	</group>
+	
+</launch>

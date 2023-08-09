@@ -1,0 +1,51 @@
+<!-- 
+	Launch file for running leader-follower extrapolation scripts simultaneously
+-->
+
+<launch>
+  <!-- <group>
+		<node pkg="iq_gnc" type="drone_states_pub.py" name="f1_drone_states" output="screen">
+			<param name="use_sim_time"  value="true" />
+		</node>
+	</group> -->
+  <group>
+    <node pkg="iq_gnc" type="follower_glob.py" name="extrapol" output="screen" ns="/ditto_2">
+      <param name="id" value="2"/>
+      <param name="follow_distance" value="21.65"/>
+      <param name="left_distance" value="12.5"/>
+      <param name="alt_distance" value="3.0"/>
+      
+    </node>
+  </group>
+
+  <group>
+    <node pkg="iq_gnc" type="follower_glob.py" name="extrapol" output="screen" ns="/ditto_3">
+      <param name="id" value="3"/>
+      <param name="follow_distance" value="21.65"/>
+      <param name="left_distance" value="-12.5"/>
+      <param name="alt_distance" value="3.0"/>
+      
+    </node>
+  </group>
+
+  <group>
+    <node pkg="iq_gnc" type="follower_glob.py" name="extrapol" output="screen" ns="/ditto_4">
+      <param name="id" value="4"/>
+      <param name="follow_distance" value="43.3"/>
+      <param name="left_distance" value="25"/>
+      <param name="alt_distance" value="3.0"/>
+      
+    </node>
+  </group>
+
+  <group>
+    <node pkg="iq_gnc" type="follower_glob.py" name="extrapol" output="screen" ns="/ditto_5">
+      <param name="id" value="5"/>
+      <param name="follow_distance" value="43.3"/>
+      <param name="left_distance" value="-25"/>
+      <param name="alt_distance" value="3.0"/>
+      
+    </node>
+  </group>
+</launch>
+
